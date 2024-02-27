@@ -1,0 +1,47 @@
+.appbar{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0 1rem 3rem;
+}
+.appbar-icon{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.appbar-nav{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+   
+}
+.appbar-navItem {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    text-decoration: none;
+    color: var(--black);
+    margin-right: 1rem;
+}
+.appbar-navItem:hover,
+.appbar-navItem.active {
+  text-decoration: underline var(--red-highlight);
+  text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.188rem;
+}
+@media (max-width: 768px) {
+    .appbar {
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: center;
+    }
+  
+    .appbar-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .appbar-nav {
+      padding-left: 1rem;
+    }
+  }

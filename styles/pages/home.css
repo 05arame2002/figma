@@ -1,0 +1,159 @@
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6.5rem;
+  }
+  
+  .hero-titleCont {
+    padding: 2.75rem 7.5rem 0 0;
+  }
+  
+  .hero-title {
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .hero-subtitle {
+    margin: 0 0 2rem 0;
+    font-weight: var(--body-highlight-font-weight);
+  }
+  
+  .hero-icon {
+    width: 19rem;
+    height: 19rem;
+  }
+  
+  /* Address section */
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 4.5rem;
+  }
+  
+  .address-title {
+    margin-bottom: 2.25rem;
+  }
+  
+  .address-carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+  }
+  
+  .address-img {
+    width: 19rem;
+    height: 13.5rem;
+    object-fit: cover;
+  }
+  
+  .address-info {
+    margin: 0.5rem 0 0 0;
+  }
+  
+  /* About section */
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.25rem;
+  }
+  
+  .about-title {
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    margin: 0 0 0 0;
+    width: 85%;
+  }
+  
+  /* Social Media section */
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  
+  .social-title {
+    margin-bottom: 2.25rem;
+  }
+  
+  .social-carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4.5rem;
+  }
+  
+  .social-img {
+    width: 15.5rem;
+    height: 15.5rem;
+    object-fit: cover;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2.5rem;
+    }
+  
+    .hero-titleCont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 0 4.5rem 0;
+    }
+  
+    .hero-title {
+      padding-bottom: 0.25;
+    }
+  
+    .hero-subtitle {
+      margin-bottom: 1rem;
+    }
+    
+    .hero-icon {
+      width: 14.5rem;
+      height: 14.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .address {
+      margin-top: 4.5rem;
+    }
+    
+    .address-carousel {
+      grid-template-columns: 1fr;
+      grid-gap: 2.5rem;
+    }
+  
+    .address-img {
+      width: 16rem;
+      height: 11.25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-text {
+      max-width: 16rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .socialMedia {
+      margin-top: 2rem;
+    }
+  
+    .social-carousel {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+    }
+  }

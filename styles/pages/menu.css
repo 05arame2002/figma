@@ -1,0 +1,83 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 9.5rem 0 9.5rem;
+}
+
+.menu-title {
+    margin: 2.25rem 0 0 0;
+}
+
+.menu-subtitle {
+    margin: 0 0 2.25rem 0;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.menu-icon {
+    width: 9rem;
+    height: 9rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.menu-part {
+    margin-bottom: 3.75rem;
+}
+
+.menu-partiTitle {
+    margin-bottom: 1.75rem;
+}
+
+.menu-partiDish {
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    margin: 0;
+    align-items: center;
+  }
+
+  .menu-subtitle {
+    display: none;
+  }
+
+  .menu-card {
+    width: 19.5rem;
+    padding-bottom: 2rem;
+    margin-top: 2.25rem
+  }
+
+  .menu-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu-part {
+    margin-bottom: 0;
+  }
+
+  .menu-partiTitle {
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-partiDish {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .menu-dishDescription {
+    display: none;
+  }
+}
